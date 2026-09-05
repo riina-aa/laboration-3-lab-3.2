@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #F1FFEB;
+    color: black; 
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+
+    background-color: #F1FFEB;
+    box-shadow: 0px 1px 20px grey;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: black; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li.current {
+    font-weight: 600;
+}
+
+/* index.html */
+.job-container {
+    padding: 7rem 3rem;
+}
+
+.job-container h2 {
+    margin-bottom: 3rem;
+}
+
+.job-post {
+    background-color: white;
+    border: 2px solid #6699CC; 
+    padding: 2rem;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.job-post h3 {
+    margin-bottom: 1rem;
+}
+
+.job-post div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.company {
+    font-weight: 600;
+}
+
+.job-post div span {
+    color:#3870A8; 
+}
+
+.description {
+    width: 50%;
+}
+
+#delete-btn {
+    border: none;
+    background-color: white;
+}
+
+#delete-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/* add.html */ 
+.form-container {
+    padding: 7rem 3rem;
+}
+
+.form-container .formError {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.error-messages {
+    display: none;
+    background-color: white;
+    padding: 2rem;
+    border: 2px solid #cd5050;
+    width: 35%;
+    height: 35%;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-container p {
+    width: 62ch; 
+    margin-bottom: 1rem;
+}
+
+.form-container p.second {
+    margin-bottom: 6rem;
+}
+
+.form-container form {
+    background-color: white;
+    padding: 2rem;
+    border: 2px solid #6699CC;
+    width: 40%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.inputs input {
+    width: 65%;
+    padding: 0.5rem 1rem;
+    font-family: "Quicksand", sans-serif;
+    background-color: #E0EBF5;
+    border: 1px solid black;
+}
+
+.inputs textarea {
+    width: 65%;
+    background-color: #E0EBF5;
+    border: 1px solid black;
+    font-family: "Quicksand", sans-serif;
+    padding: 0.5rem 1rem;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttonstyle {
+    background-color: #6699CC;
+    color: white;
+    padding: 0.7rem 1.5rem; 
+    border: none;
+    border-radius: 20px;
+}
+
+.buttonstyle:hover {
+    background-color: #3870A8;
+    cursor: pointer;
+}
+
+/* about.html */
+.intro {
+    padding: 7rem 3rem;
+}
+
+.intro h2 {
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    margin-bottom: 1rem;
+    max-width: 70ch;
+}
+
+footer {
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+}

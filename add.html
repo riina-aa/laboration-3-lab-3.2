@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Laboration 3</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Workexperience</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Arbetserfarenhet</a></li>
+                    <li class="current"><a href="add.html">Lägg till erfarenhet</a></li>
+                    <li><a href="about.html">Om webbplatsen</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="form-container">
+            <h2>Hur lägger jag till arbetserfarenhet?</h2>
+            <p>För att lägga till arbetslivserfarenhet så fyller du i formuläret här nedanför. Du fyller i alla fält i
+                formuläret och trycker sedan på knappen "Lägg till".</p>
+            <p class="second">Din arbetserfarenhet läggs då till och du kan se den i listan på startsidan.</p>
+            <div class="formError">
+                <form id="add-form">
+                    <h2>Lägg till arbetslivserfarenhet</h2>
+                    <div class="inputs">
+                        <label for="companyname">Arbetsplats:</label>
+                        <input type="text" name="companyname" id="companyname">
+                    </div>
+                    <div class="inputs">
+                        <label for="jobtitle">Arbetstitel:</label>
+                        <input type="text" name="jobtitle" id="jobtitle">
+                    </div>
+                    <div class="inputs">
+                        <label for="location">Ort:</label>
+                        <input type="text" name="location" id="location">
+                    </div>
+                    <div class="inputs">
+                        <label for="startdate">Startdatum:</label>
+                        <input type="date" name="startdate" id="startdate">
+                    </div>
+                    <div class="inputs">
+                        <label for="enddate">Slutdatum:</label>
+                        <input type="date" name="enddate" id="enddate">
+                    </div>
+                    <div class="inputs">
+                        <label for="description">Arbetsbeskrivning:</label>
+                        <textarea name="description" id="description" rows="7"></textarea>
+                    </div>
+                    <div class="button-row">
+                        <button class="buttonstyle" id="submit-btn" type="submit">Lägg till</button>
+                        <button class="buttonstyle" type="reset">Rensa</button>
+                    </div>
+                </form>
+                <div class="error-messages"></div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Laboration 3</p>
+            <p>Kurs: Backend-baserad webbutveckling</p>
+            <p>Riina Aaltonen</p>
+            <p>2026</p>
+        </footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
