@@ -106,7 +106,7 @@ async function sendWorkexperience(workexperience) {
         let data = await response.json();
 
         if (!response.ok) { //Vid fel skrivs felmeddelande ut 
-            throw new Error(data.message);
+            throw new Error(data.message || "Kunde inte lägga till arbetserfarenheten");
         }
 
         //Vid lyckat resultat så ändras submit-knappen och ger feedback till användaren
@@ -123,9 +123,9 @@ async function sendWorkexperience(workexperience) {
             submitBtn.style.color = "";
         }, 1500);
 
-    } catch (errors) { //Felhantering
+    } catch (error) { //Felhantering
 
-        showErrors(errors)
+        showErrors([error.message]);
 
     }
 };
