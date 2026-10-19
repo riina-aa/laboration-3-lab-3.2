@@ -13,6 +13,6 @@ til en NoSQL-databas. MongoDb har valts och har hanterats med hjälp av Mongoose
 
 ## 🔗 Länk till inspelning av lösning 🔗##
 
-👀 --> LÄNK HÄR 
+👀 --> https://youtu.be/jOGmn0cLSyQ 
 
 #### /Riina Aaltonen 
